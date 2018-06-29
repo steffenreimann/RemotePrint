@@ -1,0 +1,51 @@
+%!PS-Adobe-3.0
+%%BoundingBox: 17 19 595 773
+%%Pages: 1
+%%For: (steffenreimann)
+%%Title: (node print job)
+%RBINumCopies: 1
+%%EndComments
+%%BeginProlog
+%%EndProlog
+%%BeginSetup
+% Disable CTRL-D as an end-of-file marker...
+userdict dup(\004)cvn{}put (\004\004)cvn{}put
+[{
+%%BeginFeature: *APOptionalDuplexer False
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *Duplex None
+1 dict dup /Duplex false put setpagedevice
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *InputSlot Upper
+%%EndFeature
+} stopped cleartomark
+[{
+%%BeginFeature: *PageRegion Letter
+2 dict dup /PageSize [612 792] put dup /ImagingBBox null put setpagedevice
+%%EndFeature
+} stopped cleartomark
+% x y w h ESPrc - Clip to a rectangle.
+userdict/ESPrc/rectclip where{pop/rectclip load}
+{{newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+neg 0 rlineto closepath clip newpath}bind}ifelse put
+% x y w h ESPrf - Fill a rectangle.
+userdict/ESPrf/rectfill where{pop/rectfill load}
+{{gsave newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+neg 0 rlineto closepath fill grestore}bind}ifelse put
+% x y w h ESPrs - Stroke a rectangle.
+userdict/ESPrs/rectstroke where{pop/rectstroke load}
+{{gsave newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+neg 0 rlineto closepath stroke grestore}bind}ifelse put
+userdict/ESPwl{}bind put
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+%%EndPageSetup
+%%BeginDocument: nondsc
+job-15.ps%%EndDocument
+%%EOF
+
